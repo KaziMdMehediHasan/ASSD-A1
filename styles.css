@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Oswald:wght@100&display=swap");
+
+/* styles for the main body */
+body {
+  background-image: url("./images/mosque.jpg.jpg"), linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  font-family: "Poppins", sans-serif;
+  /* font-family: "Oswald", sans-serif; */
+  color: whitesmoke;
+}
+
+/* navigation styles */
+header {
+  backdrop-filter: blur(100px);
+  background-color: rgba(32, 82, 82, 0.178);
+  position: sticky;
+  top: 0rem;
+  z-index: 2;
+}
+
+nav {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+  font-size: 1.2rem;
+}
+
+/* the style below gets rid of the underline and default blue color of any anchor link */
+ul a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+/* some ui effect takes place when mouse is moved over the header anchor link */
+ul a:hover {
+  color: #4fcfcf;
+  cursor: pointer;
+}
+
+.nav-ul {
+  width: 25%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+div {
+  margin: 3% 1%;
+}
+
+.main-title {
+  font-size: 3.5rem;
+}
+
+.prof-des {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* form styles */
+form {
+  width: 70%;
+}
+
+input {
+  padding: 0.7rem 1rem;
+  border: 1px solid #4fcfcf;
+  border-radius: 5px;
+  outline: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 16px 48px 0px rgb(53, 53, 53);
+  transition: 0.2s ease-in-out;
+
+}
+
+input:focus {
+  background-color: whitesmoke;
+  transform: scale(1.1);
+}
+
+/* submit button style */
+.submit-button {
+  background-color: #4fcfcf;
+  color: whitesmoke;
+  transition: 0.2s ease-in-out;
+}
+
+.submit-button:hover {
+  background-color: whitesmoke;
+  color: rgb(79, 207, 207);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+/* hero section styles starts */
+.hero-div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.img-div {
+  box-shadow: 0px 0px 40px 10px rgba(79, 207, 207, 0.178);
+  height: auto;
+  width: auto;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.profile-img {
+  width: 30rem;
+  height: 30rem;
+  transition: transform 0.3s ease-in-out;
+  object-fit: cover;
+  object-position: 100% 20%;
+}
+
+.profile-img:hover {
+  transform: scale(1.1);
+}
+
+/* hero section styles end */
+
+/* card section styles starts */
+
+.card-section {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  line-height: 3rem;
+}
+
+.single-card {
+  width: 20rem;
+  height: auto;
+  box-shadow: 0px 16px 48px 0px rgba(79, 207, 207, 0.178);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: 0.2s ease-in-out;
+  padding: 10px 0;
+  /* the property below adds blur effect in the background */
+  backdrop-filter: blur(100px);
+}
+
+.single-card:hover {
+  background-color: whitesmoke;
+  color: #272727;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.card-img {
+  width: 5rem;
+}
+
+ul {
+  list-style: none;
+}
+
+/* card section styles ends */
+
+/* experience section starts*/
+.experice-wrapper-div {
+  margin: 0 auto;
+  width: 65%;
+  backdrop-filter: blur(100px);
+  padding: 0.5rem 2rem;
+  border-radius: 25px;
+  box-shadow: 0px 0px 30px 0px rgba(79, 207, 207, 0.178);
+  /* transition creates subtle animation */
+  transition: 0.2s ease-in-out;
+}
+
+.experice-wrapper-div:hover {
+  transform: scale(1.1);
+}
+
+/* experience section end*/
+
+/* footer styles starts here */
+footer {
+  padding: 2rem 2rem;
+  margin: 3rem 0;
+  backdrop-filter: blur(100px);
+  background-color: rgba(32, 82, 82, 0.178);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0px 0px 45px 0px rgba(79, 207, 207, 0.178);
+  max-height: 30vh;
+}
+
+.social-media {
+  margin: 0 auto;
+  padding: 3rem 0;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.social-media img {
+  width: 5rem;
+  transition: 1s ease-in-out;
+}
+
+
+/* footer styles ends here */
